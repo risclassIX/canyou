@@ -14,7 +14,7 @@ c = st.session_state.get('cv', random.randint(1, 100))  # Random number to guess
 st.title(f"Your Welcome!  आपका स्वागत है।")
 st.title(f"     Can You Guess?          ")
 st.subheader(f"Mai Ansh hu Apka Player Maine 1 se 100 ke bich ek number liya hai. Kya Aap us number ko guess kar sakte HaI?")
-st.warning(f"Your {a + 1}/10 attempts are completed. आपके {a + 1}/10 प्रयास समाप्त हो चुके हैं।"  )
+st.success(f"Your {a + 1}/10 attempts are completed. आपके {a + 1}/10 प्रयास समाप्त हो चुके हैं।"  )
 
 # Number input
 n = st.number_input("Enter your guess. अपना गेस दर्ज करें:",min_value=1,max_value=100,step=1)
