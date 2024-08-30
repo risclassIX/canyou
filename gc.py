@@ -4,7 +4,7 @@ import random
 import time
 
 with st.spinner(f"रुको ज़रा, सब्र करो| कृपया एक पल रुकें, जादू चल रहा है|  थोड़ा इंतजार करें! हमारे सर्वर अपने सपने से जाग रहे हैं। लोड हो रहा है... जैसे आपकी पसंदीदा सीरियल।थोड़ा इंतजार करें! जैसे कॉफी बनाते समय का इंतजार, बस बिना कैफीन की झंझट के| Loading..."):
-    time.sleep(15)
+    time.sleep(3)
     
 # Initialize attempt counter
 a = st.session_state.get('av', 0)
