@@ -3,8 +3,10 @@ import streamlit as st
 import random
 import time
 
-with st.spinner(f"रुको ज़रा, सब्र करो| कृपया एक पल रुकें, जादू चल रहा है|  थोड़ा इंतजार करें! हमारे सर्वर अपने सपने से जाग रहे हैं। लोड हो रहा है... जैसे आपकी पसंदीदा सीरियल।थोड़ा इंतजार करें! जैसे कॉफी बनाते समय का इंतजार, बस बिना कैफीन की झंझट के| Loading..."):
+pt = st.markdown('<h2 style="font-size: 36px; font-weight: bold;">रुको ज़रा, सब्र करो</h2>', unsafe_allow_html=True)
+with st.spinner(''):
     time.sleep(2)
+pt.empty()
     
 # Initialize attempt counter
 a = st.session_state.get('av', 0)
@@ -39,7 +41,7 @@ if st.button("Guess गेस करें"):
 if a == 10:  # Check if the number of attempts is 10
     st.error(f"Sorry! Aapke 10 attempts khatam ho gaye. Sahi number {c} tha.")
     st.snow()
-    st.session_state.clear() # Clear session state to reset the game
+    st.session_state.clear() 
 
 st.progress(100)
 st.header(f" What is Can you Guess?     ")
