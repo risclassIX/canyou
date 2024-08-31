@@ -29,7 +29,7 @@ if st.button("Guess गेस करें"):
         st.warning("Oh! You entered a small number.Please enter a big number.अरे! आपने एक छोटा नंबर एंटर किया है। कृपया एक बड़ा नंबर एंटर करें।")
     else:
         st.success(f"WOW! You guessed the number correctly in {a} guesses. I was taken {c}. वाह! आपने सही नंबर {a} प्रयासों में गेस किया। मैंने {c} लिया था।")
-        st.balloons(1)  # Show balloons if the user guesses correctly
+        st.balloons()  # Show balloons if the user guesses correctly
         st.session_state.clear()  # Clear session state to reset the game
 
     # Update session state
