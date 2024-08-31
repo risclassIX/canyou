@@ -5,7 +5,7 @@ import time
 
 pt = st.markdown('<h2 style="font-size: 36px; font-weight: bold;">रुको ज़रा, सब्र करो</h2>', unsafe_allow_html=True)
 with st.spinner(''):
-    time.sleep(2)
+      time.sleep(2)
 pt.empty()
     
 # Initialize attempt counter
